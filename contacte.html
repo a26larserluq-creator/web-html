@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacte | Camins Oberts</title>
+  <style>
+    h2{color: rgb(50, 50, 152);
+      
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contacta amb nosaltres</h1>
+    <p>Estarem encantats de respondre les teves preguntes</p>
+    <nav aria-label="Navegació principal">
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="informacio.html">Informació</a></li>
+        <li><a href="contacte.html" aria-current="page">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="dades">
+    <br>
+      <h2 id="dades">Dades de contacte</h2>
+      <address>
+        La sede central Zara<br>
+        Edificio Inditex, Avenida de la Diputación s/n, <br>
+        15142 Arteixo, A Coruña, España.<br>
+        +34 981 185 400<br>
+  
+        Informació general d'Inditex: <a href="mailto:inditexinfo@inditex.com">inditexinfo@inditex.com</a><br>
+        Consultes i reclamacions de Zara Espanya: <a href="mailto:info-es@zara.com">info-es@zara.com</a><br>
+        Premsa i comunicació: <a href="mailto:press@inditex.com">press@inditex.com</a><br>
+      </address>
+    </section>
+
+    <section aria-labelledby="formulari">
+     <br>
+      <h2 id="formulari">Envia'ns un missatge</h2>
+      <p>Omple els camps obligatoris.</p>
+      <form action="#" method="post">
+        <p>
+          <label for="nom">*Nom:</label><br>
+          <input type="text" id="nom" name="nom" autocomplete="name" required>
+        </p>
+
+        <p>
+          <label for="email">*Correu electrònic:</label><br>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </p>
+
+        <p>
+          <label for="motiu">Motiu de contacte:</label><br>
+          <select id="motiu" name="motiu">
+            <option value="">Selecciona un motiu</option>
+            <option value="informacio">Informació general</option>
+            <option value="inscripcio">Consultes i reclamacions</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="missatge">*Missatge:</label><br>
+          <textarea id="missatge" name="missatge" rows="6" cols="40" required></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="privacitat" name="privacitat" value="acceptada" required>
+          <label for="privacitat">*Accepto que les meves dades s'utilitzin per respondre aquesta consulta.</label>
+        </p>
+
+        <p>
+          <button type="submit">Envia el missatge</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  
+</body>
+</html>
